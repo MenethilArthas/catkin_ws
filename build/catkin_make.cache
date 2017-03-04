@@ -1,0 +1,2 @@
+learning_tf:rplidar_ros:slam_tutorials
+-DCATKIN_DEVEL_PREFIX=/home/action/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/action/catkin_ws/install -G Unix Makefiles
