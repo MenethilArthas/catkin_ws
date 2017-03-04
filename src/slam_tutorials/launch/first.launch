@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<launch>
+	<node name= "rec_serial" pkg="slam_tutorials" type="receiver.py" />
+	<node name= "pub_odom" pkg="slam_tutorials" type="pub_odom" />
+</launch>
