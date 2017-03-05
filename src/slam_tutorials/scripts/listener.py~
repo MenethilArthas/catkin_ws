@@ -15,7 +15,7 @@ def Update_Speed(data):
 	
 	
 	
-def capture_keyinput():
+def listener():
 	ser = serial.Serial('/dev/ttyUSB0',115200,timeout=1)
 	rospy.init_node('listener',anonymous=True)	
 	motor_speed = rospy.Subscriber('teleop/cmd_vel',String,Update_Speed)
@@ -33,5 +33,5 @@ def capture_keyinput():
 			rate.sleep()
 	
 if __name__=='__main__':
-	capture_keyinput()
+	listener()
 
