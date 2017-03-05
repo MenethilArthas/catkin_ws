@@ -20,7 +20,7 @@ Odom_Trans::Odom_Trans()
 	coor_x=0.0;
 	coor_y=0.0;
 	coor_angle=0.0;
-	sub_coor=n.subscribe("coor",50,&Odom_Trans::CallBack,this);
+	sub_coor=n.subscribe("rec_coor",50,&Odom_Trans::CallBack,this);
 }
 
 void Odom_Trans::CallBack(const slam_tutorials::coor::ConstPtr& coorMsg)
