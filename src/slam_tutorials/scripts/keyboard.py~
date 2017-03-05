@@ -1,4 +1,4 @@
-######!/usr/bin/env python
+#!/usr/bin/env python
 
 import rospy
 
@@ -21,7 +21,10 @@ def getKey():
 
 
 if __name__=="__main__":
+<<<<<<< HEAD
     print("qunimade11")
+=======
+>>>>>>> ef3879f4da5e1532005fc6b68b5413d1de9b2655
     settings = termios.tcgetattr(sys.stdin)
     
     rospy.init_node('teleop')
