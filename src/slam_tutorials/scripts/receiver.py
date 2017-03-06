@@ -11,14 +11,17 @@ updateflag=False
 coord_x=0
 coord_y=0
 coord_angle=0
+
 def Reciver():
-	print('rec thread start')
+	#print('rec thread start')
 	global updateflag
 	global coord_x
 	global coord_y
 	global coord_angle
 	ser=serial.Serial('/dev/serial0',115200,timeout=1)
+	
 	while not rospy.is_shutdown():
+
 		data=ser.read(14)
 		if(len(data)>=14):
 			if(data[0]=='A'and data[1]=='C'):
@@ -32,21 +35,29 @@ def Reciver():
 		
 
 if __name__ =='__main__':
-	print("main thread start")
-	rospy.init_node("test")
+	
+	#print("main thread start")
+	
+	rospy.init_node("test",log_level=rospy.INFO)
 	pub=rospy.Publisher('rec_coor',coor,queue_size=1000)
 	rec=threading.Thread(target=Reciver)
 	rec.setDaemon(True)
 	rec.start()
 	rate=rospy.Rate(10)
+	
 	while not rospy.is_shutdown():
+		
 		if(updateflag):
+			
 			rec_coor=coor()
 			rec_coor.x=coord_x
 			rec_coor.y=coord_y
 			rec_coor.angle=coord_angle
+			rospy.loginfo("x=%f y=%f angle=%f" %(rec_coor.x,rec_coor.y,rec_coor.angle))
 			#print(rec_coor.angle)
 			#print(coord_angle)
 			pub.publish(rec_coor)
 			updateflag=False
+			
 			rate.sleep()
+				

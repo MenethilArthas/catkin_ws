@@ -1,0 +1,8 @@
+import logging
+
+
+a=1.23
+b=123.123
+c=234.23432
+logging.basicConfig(filename="coor.log",filemode='w',level=logging.INFO)
+logging.info("a=%f b=%f c=%f" %(a,b,c))
