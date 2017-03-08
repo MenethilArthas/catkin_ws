@@ -16,7 +16,7 @@ def Update_Speed(data):
 	
 	
 def listener():
-	ser = serial.Serial('/dev/ttyUSB0',115200,timeout=1)
+	ser = serial.Serial('/dev/serial0',115200,timeout=1)
 	rospy.init_node('listener',anonymous=True)	
 	motor_speed = rospy.Subscriber('teleop/cmd_vel',String,Update_Speed)
 	rate=rospy.Rate(10)
