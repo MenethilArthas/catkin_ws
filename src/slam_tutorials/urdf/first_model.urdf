@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<robot name="myfirst">
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <cylinder length="0.11" radius="0.22"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="right_wheel">
+    <visual>
+      <geometry>
+        <cylinder length="0.03" radius="0.11"/>
+      </geometry>
+	  <origin rpy="0 1.57075 0" xyz="0 0 0.3"/>
+    </visual>
+  </link>
+  <link name="left_wheel">
+    <visual>
+      <geometry>
+        <cylinder length="0.03" radius="0.11"/>
+      </geometry>
+	  <origin rpy="0 1.57075 0" xyz="0 0 -0.3"/>
+    </visual>
+  </link>
+  
+  <joint name="base_to_right_wheel" type="fixed">
+    <parent link="base_link"/>
+    <child link="right_wheel"/>
+  </joint>
+  <joint name="base_to_left_wheel" type="fixed">
+    <parent link="base_link"/>
+    <child link="left_wheel"/>
+  </joint>
+  
+  
+  
+</robot>
