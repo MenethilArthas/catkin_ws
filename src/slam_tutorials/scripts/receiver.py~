@@ -28,7 +28,7 @@ def Reciver():
 				coord_x,=struct.unpack('f',data[2]+data[3]+data[4]+data[5])
 				coord_y,=struct.unpack('f',data[6]+data[7]+data[8]+data[9])
 				coord_angle,=struct.unpack('f',data[10]+data[11]+data[12]+data[13])
-				#print(coord_angle)
+				
 				updateflag=True
 		else:
 			pass
