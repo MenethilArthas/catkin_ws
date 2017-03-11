@@ -1,8 +1,9 @@
 #!/usr/bin/env python
-
+#moniter keyboard input and transmit it to PC
 import rospy
+import struct
+import serial
 
-#from geometry_msgs.msg import Twist
 
 from std_msgs.msg import String
 
@@ -23,9 +24,9 @@ def getKey():
 if __name__=="__main__":
 
     settings = termios.tcgetattr(sys.stdin)
-    
+    ser = serial.Serial('/dev/serial0',115200,timeout=1)
     rospy.init_node('teleop')
-    pub = rospy.Publisher('~cmd_vel', String, queue_size=5)
+    #pub = rospy.Publisher('~cmd_vel', String, queue_size=5)
     rate=rospy.Rate(10)
 
     # twist = Twist()
@@ -35,14 +36,14 @@ if __name__=="__main__":
 		key = getKey()
 		if(key=='\x03'):
 			break
-		pub.publish(key)
+		ser.write('A')
+		ser.write('C')
+		ser.write(struct.pack('c',key))
 		rate.sleep()
 
     except:
-        print e
-
-    finally:
-	pub.publish('s')
+        print (e)
+		
 
     termios.tcsetattr(sys.stdin, termios.TCSADRAIN, settings)
 

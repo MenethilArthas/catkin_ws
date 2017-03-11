@@ -2,7 +2,7 @@
 <launch>
 	<node  pkg="slam_tutorials" type="keyboard.py" name= "teleop"/>
 	<node  pkg="slam_tutorials" type="pub_odom" name= "pub_odom"/>
-	<node  pkg="slam_tutorials" type="listener.py" name= "listener"/>
+	<!--node  pkg="slam_tutorials" type="listener.py" name= "listener"/-->
 	<node  pkg="slam_tutorials" type="receiver.py" name= "receiver" output="log"/>
   	<node name="rplidarNode"          pkg="rplidar_ros"  type="rplidarNode" output="screen">
   <param name="serial_port"         type="string" value="/dev/rplidar"/>  
