@@ -20,15 +20,20 @@ def getKey():
     termios.tcsetattr(sys.stdin, termios.TCSADRAIN, settings)
     return key
 
+def twistCallback(data):
+	
+	dx = data.linear.x;
+	dy = data.linear.y;
+	dr = data.angular.z;
+
 
 if __name__=="__main__":
 
     settings = termios.tcgetattr(sys.stdin)
     ser = serial.Serial('/dev/serial0',115200,timeout=1)
-    rospy.init_node('teleop')
-    #pub = rospy.Publisher('~cmd_vel', String, queue_size=5)
+    rospy.init_node('transmit')
     rate=rospy.Rate(10)
-
+	rospy.Subscriber("cmd_vel",Twist, twistCallback);
     # twist = Twist()
 
     try:

@@ -1,0 +1,2 @@
+单独建图的话运行mapping.launch
+导航的话运行navigation.launch
