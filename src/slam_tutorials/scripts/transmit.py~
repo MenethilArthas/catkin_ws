@@ -3,7 +3,7 @@
 import rospy
 import struct
 import serial
-from geometry_msgs.msg import Twist
+import geometry_msgs.Twist
 
 from std_msgs.msg import String
 

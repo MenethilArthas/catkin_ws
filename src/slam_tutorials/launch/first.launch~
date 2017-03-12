@@ -1,15 +1,14 @@
 <?xml version="1.0"?>
 <launch>
-	<node  pkg="slam_tutorials" type="keyboard.py" name= "teleop"/>
+	<node  pkg="slam_tutorials" type="transmit.py" name= "transmit"/>
 	<node  pkg="slam_tutorials" type="pub_odom" name= "pub_odom"/>
-	<node  pkg="slam_tutorials" type="listener.py" name= "listener"/>
+	<!--node  pkg="slam_tutorials" type="listener.py" name= "listener"/-->
 	<node  pkg="slam_tutorials" type="receiver.py" name= "receiver" output="log"/>
-  	<node name="rplidarNode"          pkg="rplidar_ros"  type="rplidarNode" output="screen">
+  	<!--node name="rplidarNode"          pkg="rplidar_ros"  type="rplidarNode" output="screen">
   <param name="serial_port"         type="string" value="/dev/rplidar"/>  
   <param name="serial_baudrate"     type="int"    value="115200"/>
   <param name="frame_id"            type="string" value="laser"/>
   <param name="inverted"            type="bool"   value="false"/>
   <param name="angle_compensate"    type="bool"   value="true"/>
-  </node>
-  <!--node  pkg="tf" type="static_transform_publisher" name= "base2laser" args="0 0 0.15 0 0 0 base_link laser 50"/-->
+  </node-->
 </launch>

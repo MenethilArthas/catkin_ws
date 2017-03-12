@@ -1,7 +1,7 @@
 #include<ros/ros.h>
 #include<tf/transform_broadcaster.h>
 #include <nav_msgs/Odometry.h>
-#include <slam_tutorials/coor.h>
+#include <slam_tutorials/recdata.h>
 
 class Odom_Trans
 {
@@ -14,7 +14,7 @@ private:
 	ros::Publisher pub_odom;
 	ros::Time current_time;
 	float coor_x,coor_y,coor_angle,vel_x,vel_w;
-	void CallBack(const slam_tutorials::coor::ConstPtr& recMsg);
+	void CallBack(const slam_tutorials::recdata::ConstPtr& recMsg);
 };
 
 Odom_Trans::Odom_Trans()
@@ -27,7 +27,7 @@ Odom_Trans::Odom_Trans()
 	pub_odom = n.advertise<nav_msgs::Odometry>("odom",50);
 }
 
-void Odom_Trans::CallBack(const slam_tutorials::coor::ConstPtr& recMsg)
+void Odom_Trans::CallBack(const slam_tutorials::recdata::ConstPtr& recMsg)
 {
 	coor_x=recMsg->x;
 	coor_y=recMsg->y;

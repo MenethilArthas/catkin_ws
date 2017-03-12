@@ -11,7 +11,8 @@ updateflag=False
 coord_x=0
 coord_y=0
 coord_angle=0
-
+vel_x=0
+vel_w=0
 def Reciver():
 	#print('rec thread start')
 	global updateflag
@@ -33,6 +34,11 @@ def Reciver():
 				vel_x,=struct.unpack('f',data[14]+data[15]+data[16]+data[17])
 				vel_w,=struct.unpack('f',data[18]+data[19]+data[20]+data[21])
 				updateflag=True
+			else:
+				while data[0]!='A':
+					data=ser.read(1)
+				data=ser.read(21)
+				
 		else:
 			pass
 		
