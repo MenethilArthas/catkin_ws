@@ -25,6 +25,7 @@ def twistCallback(data):
 	dx = data.linear.x;
 	dy = data.linear.y;
 	dr = data.angular.z;
+	rospy.loginfo("dx=%f,dy=%f,dr=%f" %(dx,dy,dr))
 
 
 if __name__=="__main__":
