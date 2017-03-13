@@ -9,6 +9,10 @@ from std_msgs.msg import String
 
 import sys, select, termios, tty
 
+
+
+
+
 def getKey():
     tty.setraw(sys.stdin.fileno())
     rlist, _, _ = select.select([sys.stdin], [], [], 0.1)
@@ -22,15 +26,32 @@ def getKey():
 
 def twistCallback(data):
 	
+	ser=serial.Serial()
+	ser.port='/dev/serial0'
+        ser.baudrate='115200'
+        ser.timeout=1
+        ser.open()
 	dx = data.linear.x;
 	dy = data.linear.y;
 	dr = data.angular.z;
-	#rospy.loginfo("dx=%f,dy=%f,dr=%f" %(dx,dy,dr))
+	print("%f,%f" %(dx,dr))
+	try:		
+		trans_str= struct.pack('ff',data.linear.x,data.linear.z)
+		ser.write('O')
+		ser.write('L')
+		for i in range(len(trans_str)):
+			ser.write(trans_str[i])
+		#rospy.loginfo("dx=%f,dy=%f,dr=%f" %(dx,dy,dr))
+	except BaseException as e:
+		print(e)
+
+
 
 
 if __name__=="__main__":
-
+    global ser
     settings = termios.tcgetattr(sys.stdin)
+    
     ser = serial.Serial('/dev/serial0',115200,timeout=1)
     rospy.init_node('transmit')
     rate=rospy.Rate(10)
@@ -47,7 +68,7 @@ if __name__=="__main__":
 		ser.write(struct.pack('c',key))
 		rate.sleep()
 
-    except:
+    except BaseException as e:
         print (e)
 		
 
