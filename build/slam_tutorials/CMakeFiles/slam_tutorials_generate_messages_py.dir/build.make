@@ -45,23 +45,23 @@ CMAKE_BINARY_DIR = /home/action/catkin_ws/build
 # Include the progress variables for this target.
 include slam_tutorials/CMakeFiles/slam_tutorials_generate_messages_py.dir/progress.make
 
-slam_tutorials/CMakeFiles/slam_tutorials_generate_messages_py: /home/action/catkin_ws/devel/lib/python2.7/dist-packages/slam_tutorials/msg/_coor.py
+slam_tutorials/CMakeFiles/slam_tutorials_generate_messages_py: /home/action/catkin_ws/devel/lib/python2.7/dist-packages/slam_tutorials/msg/_recdata.py
 slam_tutorials/CMakeFiles/slam_tutorials_generate_messages_py: /home/action/catkin_ws/devel/lib/python2.7/dist-packages/slam_tutorials/msg/__init__.py
 
-/home/action/catkin_ws/devel/lib/python2.7/dist-packages/slam_tutorials/msg/_coor.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
-/home/action/catkin_ws/devel/lib/python2.7/dist-packages/slam_tutorials/msg/_coor.py: /home/action/catkin_ws/src/slam_tutorials/msg/coor.msg
+/home/action/catkin_ws/devel/lib/python2.7/dist-packages/slam_tutorials/msg/_recdata.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
+/home/action/catkin_ws/devel/lib/python2.7/dist-packages/slam_tutorials/msg/_recdata.py: /home/action/catkin_ws/src/slam_tutorials/msg/recdata.msg
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/action/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_1)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG slam_tutorials/coor"
-	cd /home/action/catkin_ws/build/slam_tutorials && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/action/catkin_ws/src/slam_tutorials/msg/coor.msg -Islam_tutorials:/home/action/catkin_ws/src/slam_tutorials/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p slam_tutorials -o /home/action/catkin_ws/devel/lib/python2.7/dist-packages/slam_tutorials/msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG slam_tutorials/recdata"
+	cd /home/action/catkin_ws/build/slam_tutorials && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/action/catkin_ws/src/slam_tutorials/msg/recdata.msg -Islam_tutorials:/home/action/catkin_ws/src/slam_tutorials/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p slam_tutorials -o /home/action/catkin_ws/devel/lib/python2.7/dist-packages/slam_tutorials/msg
 
 /home/action/catkin_ws/devel/lib/python2.7/dist-packages/slam_tutorials/msg/__init__.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
-/home/action/catkin_ws/devel/lib/python2.7/dist-packages/slam_tutorials/msg/__init__.py: /home/action/catkin_ws/devel/lib/python2.7/dist-packages/slam_tutorials/msg/_coor.py
+/home/action/catkin_ws/devel/lib/python2.7/dist-packages/slam_tutorials/msg/__init__.py: /home/action/catkin_ws/devel/lib/python2.7/dist-packages/slam_tutorials/msg/_recdata.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/action/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python msg __init__.py for slam_tutorials"
 	cd /home/action/catkin_ws/build/slam_tutorials && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/action/catkin_ws/devel/lib/python2.7/dist-packages/slam_tutorials/msg --initpy
 
 slam_tutorials_generate_messages_py: slam_tutorials/CMakeFiles/slam_tutorials_generate_messages_py
-slam_tutorials_generate_messages_py: /home/action/catkin_ws/devel/lib/python2.7/dist-packages/slam_tutorials/msg/_coor.py
+slam_tutorials_generate_messages_py: /home/action/catkin_ws/devel/lib/python2.7/dist-packages/slam_tutorials/msg/_recdata.py
 slam_tutorials_generate_messages_py: /home/action/catkin_ws/devel/lib/python2.7/dist-packages/slam_tutorials/msg/__init__.py
 slam_tutorials_generate_messages_py: slam_tutorials/CMakeFiles/slam_tutorials_generate_messages_py.dir/build.make
 .PHONY : slam_tutorials_generate_messages_py

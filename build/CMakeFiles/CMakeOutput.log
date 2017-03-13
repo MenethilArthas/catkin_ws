@@ -291,3 +291,85 @@ Linking C executable cmTryCompileExec512572406
 make[1]:正在离开目录 `/home/action/catkin_ws/build/CMakeFiles/CMakeTmp'
 
 
+Performing C++ SOURCE FILE Test COMPILER_SUPPORTS_CXX11 succeded with the following output:
+Change Dir: /home/action/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1146135670/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1146135670.dir/build.make CMakeFiles/cmTryCompileExec1146135670.dir/build
+make[1]: Entering directory `/home/action/catkin_ws/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/action/catkin_ws/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1146135670.dir/src.cxx.o
+/usr/bin/c++    -DBT_USE_DOUBLE_PRECISION -Wall -Wuninitialized -Winit-self -Wunused-function -Wunused-label -Wunused-variable -Wunused-but-set-variable -Wunused-but-set-parameter -Warray-bounds -Wtype-limits -Wreturn-type -Wsequence-point -Wparentheses -Wmissing-braces -Wchar-subscripts -Wswitch -Wwrite-strings -Wenum-compare -Wempty-body -DCOMPILER_SUPPORTS_CXX11   -std=c++11 -o CMakeFiles/cmTryCompileExec1146135670.dir/src.cxx.o -c /home/action/catkin_ws/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec1146135670
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1146135670.dir/link.txt --verbose=1
+/usr/bin/c++    -DBT_USE_DOUBLE_PRECISION -Wall -Wuninitialized -Winit-self -Wunused-function -Wunused-label -Wunused-variable -Wunused-but-set-variable -Wunused-but-set-parameter -Warray-bounds -Wtype-limits -Wreturn-type -Wsequence-point -Wparentheses -Wmissing-braces -Wchar-subscripts -Wswitch -Wwrite-strings -Wenum-compare -Wempty-body -DCOMPILER_SUPPORTS_CXX11    CMakeFiles/cmTryCompileExec1146135670.dir/src.cxx.o  -o cmTryCompileExec1146135670 -rdynamic 
+make[1]: Leaving directory `/home/action/catkin_ws/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0;}
+Performing C++ SOURCE FILE Test COMPILER_SUPPORTS_CXX0X succeded with the following output:
+Change Dir: /home/action/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2667890938/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2667890938.dir/build.make CMakeFiles/cmTryCompileExec2667890938.dir/build
+make[1]: Entering directory `/home/action/catkin_ws/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/action/catkin_ws/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2667890938.dir/src.cxx.o
+/usr/bin/c++    -DBT_USE_DOUBLE_PRECISION -Wall -Wuninitialized -Winit-self -Wunused-function -Wunused-label -Wunused-variable -Wunused-but-set-variable -Wunused-but-set-parameter -Warray-bounds -Wtype-limits -Wreturn-type -Wsequence-point -Wparentheses -Wmissing-braces -Wchar-subscripts -Wswitch -Wwrite-strings -Wenum-compare -Wempty-body -DCOMPILER_SUPPORTS_CXX0X   -std=c++0x -o CMakeFiles/cmTryCompileExec2667890938.dir/src.cxx.o -c /home/action/catkin_ws/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec2667890938
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2667890938.dir/link.txt --verbose=1
+/usr/bin/c++    -DBT_USE_DOUBLE_PRECISION -Wall -Wuninitialized -Winit-self -Wunused-function -Wunused-label -Wunused-variable -Wunused-but-set-variable -Wunused-but-set-parameter -Warray-bounds -Wtype-limits -Wreturn-type -Wsequence-point -Wparentheses -Wmissing-braces -Wchar-subscripts -Wswitch -Wwrite-strings -Wenum-compare -Wempty-body -DCOMPILER_SUPPORTS_CXX0X    CMakeFiles/cmTryCompileExec2667890938.dir/src.cxx.o  -o cmTryCompileExec2667890938 -rdynamic 
+make[1]: Leaving directory `/home/action/catkin_ws/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0;}
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/action/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2021378176/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2021378176.dir/build.make CMakeFiles/cmTryCompileExec2021378176.dir/build
+make[1]: 正在进入目录 `/home/action/catkin_ws/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/action/catkin_ws/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2021378176.dir/src.c.o
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec2021378176.dir/src.c.o   -c /home/action/catkin_ws/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec2021378176
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2021378176.dir/link.txt --verbose=1
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTryCompileExec2021378176.dir/src.c.o  -o cmTryCompileExec2021378176 -rdynamic 
+make[1]:正在离开目录 `/home/action/catkin_ws/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/action/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec437934349/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec437934349.dir/build.make CMakeFiles/cmTryCompileExec437934349.dir/build
+make[1]: 正在进入目录 `/home/action/catkin_ws/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/action/catkin_ws/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec437934349.dir/src.cxx.o
+/usr/bin/c++    -DBT_USE_DOUBLE_PRECISION -Wall -Wuninitialized -Winit-self -Wunused-function -Wunused-label -Wunused-variable -Wunused-but-set-variable -Wunused-but-set-parameter -Warray-bounds -Wtype-limits -Wreturn-type -Wsequence-point -Wparentheses -Wmissing-braces -Wchar-subscripts -Wswitch -Wwrite-strings -Wenum-compare -Wempty-body -std=c++11 -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec437934349.dir/src.cxx.o -c /home/action/catkin_ws/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec437934349
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec437934349.dir/link.txt --verbose=1
+/usr/bin/c++    -DBT_USE_DOUBLE_PRECISION -Wall -Wuninitialized -Winit-self -Wunused-function -Wunused-label -Wunused-variable -Wunused-but-set-variable -Wunused-but-set-parameter -Warray-bounds -Wtype-limits -Wreturn-type -Wsequence-point -Wparentheses -Wmissing-braces -Wchar-subscripts -Wswitch -Wwrite-strings -Wenum-compare -Wempty-body -std=c++11 -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTryCompileExec437934349.dir/src.cxx.o  -o cmTryCompileExec437934349 -rdynamic 
+make[1]:正在离开目录 `/home/action/catkin_ws/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+

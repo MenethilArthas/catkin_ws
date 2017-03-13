@@ -192,90 +192,6 @@ geometry_msgs_generate_messages_py/fast:
 .PHONY : geometry_msgs_generate_messages_py/fast
 
 # Convenience name for target.
-rplidar_ros/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
-	cd /home/action/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rplidar_ros/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
-.PHONY : rplidar_ros/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_cpp: rplidar_ros/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
-.PHONY : roscpp_generate_messages_cpp
-
-# fast build rule for target.
-roscpp_generate_messages_cpp/fast:
-	cd /home/action/catkin_ws/build && $(MAKE) -f rplidar_ros/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make rplidar_ros/CMakeFiles/roscpp_generate_messages_cpp.dir/build
-.PHONY : roscpp_generate_messages_cpp/fast
-
-# Convenience name for target.
-rplidar_ros/CMakeFiles/roscpp_generate_messages_lisp.dir/rule:
-	cd /home/action/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rplidar_ros/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
-.PHONY : rplidar_ros/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_lisp: rplidar_ros/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
-.PHONY : roscpp_generate_messages_lisp
-
-# fast build rule for target.
-roscpp_generate_messages_lisp/fast:
-	cd /home/action/catkin_ws/build && $(MAKE) -f rplidar_ros/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make rplidar_ros/CMakeFiles/roscpp_generate_messages_lisp.dir/build
-.PHONY : roscpp_generate_messages_lisp/fast
-
-# Convenience name for target.
-rplidar_ros/CMakeFiles/roscpp_generate_messages_py.dir/rule:
-	cd /home/action/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rplidar_ros/CMakeFiles/roscpp_generate_messages_py.dir/rule
-.PHONY : rplidar_ros/CMakeFiles/roscpp_generate_messages_py.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_py: rplidar_ros/CMakeFiles/roscpp_generate_messages_py.dir/rule
-.PHONY : roscpp_generate_messages_py
-
-# fast build rule for target.
-roscpp_generate_messages_py/fast:
-	cd /home/action/catkin_ws/build && $(MAKE) -f rplidar_ros/CMakeFiles/roscpp_generate_messages_py.dir/build.make rplidar_ros/CMakeFiles/roscpp_generate_messages_py.dir/build
-.PHONY : roscpp_generate_messages_py/fast
-
-# Convenience name for target.
-rplidar_ros/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
-	cd /home/action/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rplidar_ros/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
-.PHONY : rplidar_ros/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_cpp: rplidar_ros/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
-.PHONY : rosgraph_msgs_generate_messages_cpp
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_cpp/fast:
-	cd /home/action/catkin_ws/build && $(MAKE) -f rplidar_ros/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make rplidar_ros/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
-.PHONY : rosgraph_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-rplidar_ros/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule:
-	cd /home/action/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rplidar_ros/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
-.PHONY : rplidar_ros/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_lisp: rplidar_ros/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
-.PHONY : rosgraph_msgs_generate_messages_lisp
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_lisp/fast:
-	cd /home/action/catkin_ws/build && $(MAKE) -f rplidar_ros/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make rplidar_ros/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
-.PHONY : rosgraph_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-rplidar_ros/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule:
-	cd /home/action/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rplidar_ros/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
-.PHONY : rplidar_ros/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_py: rplidar_ros/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
-.PHONY : rosgraph_msgs_generate_messages_py
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_py/fast:
-	cd /home/action/catkin_ws/build && $(MAKE) -f rplidar_ros/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make rplidar_ros/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
-.PHONY : rosgraph_msgs_generate_messages_py/fast
-
-# Convenience name for target.
 rplidar_ros/CMakeFiles/rplidarNode.dir/rule:
 	cd /home/action/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rplidar_ros/CMakeFiles/rplidarNode.dir/rule
 .PHONY : rplidar_ros/CMakeFiles/rplidarNode.dir/rule
@@ -344,48 +260,6 @@ sensor_msgs_generate_messages_py: rplidar_ros/CMakeFiles/sensor_msgs_generate_me
 sensor_msgs_generate_messages_py/fast:
 	cd /home/action/catkin_ws/build && $(MAKE) -f rplidar_ros/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make rplidar_ros/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
 .PHONY : sensor_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-rplidar_ros/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule:
-	cd /home/action/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rplidar_ros/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-.PHONY : rplidar_ros/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_cpp: rplidar_ros/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-.PHONY : std_msgs_generate_messages_cpp
-
-# fast build rule for target.
-std_msgs_generate_messages_cpp/fast:
-	cd /home/action/catkin_ws/build && $(MAKE) -f rplidar_ros/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make rplidar_ros/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
-.PHONY : std_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-rplidar_ros/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule:
-	cd /home/action/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rplidar_ros/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-.PHONY : rplidar_ros/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_lisp: rplidar_ros/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-.PHONY : std_msgs_generate_messages_lisp
-
-# fast build rule for target.
-std_msgs_generate_messages_lisp/fast:
-	cd /home/action/catkin_ws/build && $(MAKE) -f rplidar_ros/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make rplidar_ros/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
-.PHONY : std_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-rplidar_ros/CMakeFiles/std_msgs_generate_messages_py.dir/rule:
-	cd /home/action/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rplidar_ros/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-.PHONY : rplidar_ros/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_py: rplidar_ros/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-.PHONY : std_msgs_generate_messages_py
-
-# fast build rule for target.
-std_msgs_generate_messages_py/fast:
-	cd /home/action/catkin_ws/build && $(MAKE) -f rplidar_ros/CMakeFiles/std_msgs_generate_messages_py.dir/build.make rplidar_ros/CMakeFiles/std_msgs_generate_messages_py.dir/build
-.PHONY : std_msgs_generate_messages_py/fast
 
 sdk/src/arch/linux/net_serial.o: sdk/src/arch/linux/net_serial.cpp.o
 .PHONY : sdk/src/arch/linux/net_serial.o
@@ -546,20 +420,11 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... roscpp_generate_messages_cpp"
-	@echo "... roscpp_generate_messages_lisp"
-	@echo "... roscpp_generate_messages_py"
-	@echo "... rosgraph_msgs_generate_messages_cpp"
-	@echo "... rosgraph_msgs_generate_messages_lisp"
-	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... rplidarNode"
 	@echo "... rplidarNodeClient"
 	@echo "... sensor_msgs_generate_messages_cpp"
 	@echo "... sensor_msgs_generate_messages_lisp"
 	@echo "... sensor_msgs_generate_messages_py"
-	@echo "... std_msgs_generate_messages_cpp"
-	@echo "... std_msgs_generate_messages_lisp"
-	@echo "... std_msgs_generate_messages_py"
 	@echo "... test"
 	@echo "... sdk/src/arch/linux/net_serial.o"
 	@echo "... sdk/src/arch/linux/net_serial.i"

@@ -1,2 +1,2 @@
-learning_tf:rplidar_ros:slam_tutorials
+iai_kinect2/iai_kinect2:iai_kinect2/kinect2_bridge:iai_kinect2/kinect2_calibration:iai_kinect2/kinect2_registration:iai_kinect2/kinect2_viewer:learning_tf:rplidar_ros:slam_tutorials
 -DCATKIN_DEVEL_PREFIX=/home/action/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/action/catkin_ws/install -G Unix Makefiles

@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
-messages_str = "/home/action/catkin_ws/src/slam_tutorials/msg/coor.msg"
+messages_str = "/home/action/catkin_ws/src/slam_tutorials/msg/recdata.msg"
 services_str = ""
 pkg_name = "slam_tutorials"
 dependencies_str = "std_msgs"

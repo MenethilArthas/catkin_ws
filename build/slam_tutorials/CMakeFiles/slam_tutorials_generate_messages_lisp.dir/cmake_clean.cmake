@@ -1,6 +1,6 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/slam_tutorials_generate_messages_lisp"
-  "/home/action/catkin_ws/devel/share/common-lisp/ros/slam_tutorials/msg/coor.lisp"
+  "/home/action/catkin_ws/devel/share/common-lisp/ros/slam_tutorials/msg/recdata.lisp"
 )
 
 # Per-language clean rules from dependency scanning.

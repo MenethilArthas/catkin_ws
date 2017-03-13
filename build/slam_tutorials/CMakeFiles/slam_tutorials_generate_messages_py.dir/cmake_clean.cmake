@@ -1,6 +1,6 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/slam_tutorials_generate_messages_py"
-  "/home/action/catkin_ws/devel/lib/python2.7/dist-packages/slam_tutorials/msg/_coor.py"
+  "/home/action/catkin_ws/devel/lib/python2.7/dist-packages/slam_tutorials/msg/_recdata.py"
   "/home/action/catkin_ws/devel/lib/python2.7/dist-packages/slam_tutorials/msg/__init__.py"
 )
 

@@ -51,3 +51,131 @@ make[1]:正在离开目录 `/home/action/catkin_ws/build/CMakeFiles/CMakeTmp'
 make: *** [cmTryCompileExec3564221949/fast] 错误 2
 
 
+Determining if the CL_VERSION_2_0 exist failed with the following output:
+Change Dir: /home/action/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4091505212/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4091505212.dir/build.make CMakeFiles/cmTryCompileExec4091505212.dir/build
+make[1]: 正在进入目录 `/home/action/catkin_ws/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/action/catkin_ws/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4091505212.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec4091505212.dir/CheckSymbolExists.c.o   -c /home/action/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/action/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:47: fatal error: OpenCL_INCLUDE_DIR-NOTFOUND/CL/cl.h: 没有那个文件或目录
+ #include <OpenCL_INCLUDE_DIR-NOTFOUND/CL/cl.h>
+                                               ^
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTryCompileExec4091505212.dir/CheckSymbolExists.c.o] 错误 1
+make[1]:正在离开目录 `/home/action/catkin_ws/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec4091505212/fast] 错误 2
+
+File /home/action/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <OpenCL_INCLUDE_DIR-NOTFOUND/CL/cl.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef CL_VERSION_2_0
+  return ((int*)(&CL_VERSION_2_0))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the CL_VERSION_1_2 exist failed with the following output:
+Change Dir: /home/action/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2355746182/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2355746182.dir/build.make CMakeFiles/cmTryCompileExec2355746182.dir/build
+make[1]: 正在进入目录 `/home/action/catkin_ws/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/action/catkin_ws/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2355746182.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec2355746182.dir/CheckSymbolExists.c.o   -c /home/action/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/action/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:47: fatal error: OpenCL_INCLUDE_DIR-NOTFOUND/CL/cl.h: 没有那个文件或目录
+ #include <OpenCL_INCLUDE_DIR-NOTFOUND/CL/cl.h>
+                                               ^
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTryCompileExec2355746182.dir/CheckSymbolExists.c.o] 错误 1
+make[1]:正在离开目录 `/home/action/catkin_ws/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec2355746182/fast] 错误 2
+
+File /home/action/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <OpenCL_INCLUDE_DIR-NOTFOUND/CL/cl.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef CL_VERSION_1_2
+  return ((int*)(&CL_VERSION_1_2))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the CL_VERSION_1_1 exist failed with the following output:
+Change Dir: /home/action/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1442724254/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1442724254.dir/build.make CMakeFiles/cmTryCompileExec1442724254.dir/build
+make[1]: 正在进入目录 `/home/action/catkin_ws/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/action/catkin_ws/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1442724254.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1442724254.dir/CheckSymbolExists.c.o   -c /home/action/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/action/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:47: fatal error: OpenCL_INCLUDE_DIR-NOTFOUND/CL/cl.h: 没有那个文件或目录
+ #include <OpenCL_INCLUDE_DIR-NOTFOUND/CL/cl.h>
+                                               ^
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTryCompileExec1442724254.dir/CheckSymbolExists.c.o] 错误 1
+make[1]:正在离开目录 `/home/action/catkin_ws/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec1442724254/fast] 错误 2
+
+File /home/action/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <OpenCL_INCLUDE_DIR-NOTFOUND/CL/cl.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef CL_VERSION_1_1
+  return ((int*)(&CL_VERSION_1_1))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the CL_VERSION_1_0 exist failed with the following output:
+Change Dir: /home/action/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1068639606/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1068639606.dir/build.make CMakeFiles/cmTryCompileExec1068639606.dir/build
+make[1]: 正在进入目录 `/home/action/catkin_ws/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/action/catkin_ws/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1068639606.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1068639606.dir/CheckSymbolExists.c.o   -c /home/action/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/action/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:47: fatal error: OpenCL_INCLUDE_DIR-NOTFOUND/CL/cl.h: 没有那个文件或目录
+ #include <OpenCL_INCLUDE_DIR-NOTFOUND/CL/cl.h>
+                                               ^
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTryCompileExec1068639606.dir/CheckSymbolExists.c.o] 错误 1
+make[1]:正在离开目录 `/home/action/catkin_ws/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec1068639606/fast] 错误 2
+
+File /home/action/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <OpenCL_INCLUDE_DIR-NOTFOUND/CL/cl.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef CL_VERSION_1_0
+  return ((int*)(&CL_VERSION_1_0))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+

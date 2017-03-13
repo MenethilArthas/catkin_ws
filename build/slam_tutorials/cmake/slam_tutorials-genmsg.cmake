@@ -15,9 +15,9 @@ add_custom_target(slam_tutorials_generate_messages ALL)
 
 
 
-get_filename_component(_filename "/home/action/catkin_ws/src/slam_tutorials/msg/coor.msg" NAME_WE)
+get_filename_component(_filename "/home/action/catkin_ws/src/slam_tutorials/msg/recdata.msg" NAME_WE)
 add_custom_target(_slam_tutorials_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "slam_tutorials" "/home/action/catkin_ws/src/slam_tutorials/msg/coor.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "slam_tutorials" "/home/action/catkin_ws/src/slam_tutorials/msg/recdata.msg" ""
 )
 
 #
@@ -27,7 +27,7 @@ add_custom_target(_slam_tutorials_generate_messages_check_deps_${_filename}
 ### Section generating for lang: gencpp
 ### Generating Messages
 _generate_msg_cpp(slam_tutorials
-  "/home/action/catkin_ws/src/slam_tutorials/msg/coor.msg"
+  "/home/action/catkin_ws/src/slam_tutorials/msg/recdata.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/slam_tutorials
@@ -47,7 +47,7 @@ add_custom_target(slam_tutorials_generate_messages_cpp
 add_dependencies(slam_tutorials_generate_messages slam_tutorials_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/action/catkin_ws/src/slam_tutorials/msg/coor.msg" NAME_WE)
+get_filename_component(_filename "/home/action/catkin_ws/src/slam_tutorials/msg/recdata.msg" NAME_WE)
 add_dependencies(slam_tutorials_generate_messages_cpp _slam_tutorials_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -60,7 +60,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS slam_tutorials_generate_messages_cp
 ### Section generating for lang: genlisp
 ### Generating Messages
 _generate_msg_lisp(slam_tutorials
-  "/home/action/catkin_ws/src/slam_tutorials/msg/coor.msg"
+  "/home/action/catkin_ws/src/slam_tutorials/msg/recdata.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/slam_tutorials
@@ -80,7 +80,7 @@ add_custom_target(slam_tutorials_generate_messages_lisp
 add_dependencies(slam_tutorials_generate_messages slam_tutorials_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/action/catkin_ws/src/slam_tutorials/msg/coor.msg" NAME_WE)
+get_filename_component(_filename "/home/action/catkin_ws/src/slam_tutorials/msg/recdata.msg" NAME_WE)
 add_dependencies(slam_tutorials_generate_messages_lisp _slam_tutorials_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -93,7 +93,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS slam_tutorials_generate_messages_li
 ### Section generating for lang: genpy
 ### Generating Messages
 _generate_msg_py(slam_tutorials
-  "/home/action/catkin_ws/src/slam_tutorials/msg/coor.msg"
+  "/home/action/catkin_ws/src/slam_tutorials/msg/recdata.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/slam_tutorials
@@ -113,7 +113,7 @@ add_custom_target(slam_tutorials_generate_messages_py
 add_dependencies(slam_tutorials_generate_messages slam_tutorials_generate_messages_py)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/action/catkin_ws/src/slam_tutorials/msg/coor.msg" NAME_WE)
+get_filename_component(_filename "/home/action/catkin_ws/src/slam_tutorials/msg/recdata.msg" NAME_WE)
 add_dependencies(slam_tutorials_generate_messages_py _slam_tutorials_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
