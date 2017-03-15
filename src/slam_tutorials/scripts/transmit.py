@@ -34,7 +34,7 @@ def twistCallback(data):
 	dx = data.linear.x;
 	dy = data.linear.y;
 	dr = data.angular.z;
-	print("%f,%f" %(dx,dr))
+	#print("%f,%f" %(dx,dr))
 	try:		
 		trans_str= struct.pack('ff',data.linear.x,data.linear.z)
 		ser.write('O')
